@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@400;700&family=Montserrat:wght@500&family=Nabla&family=PT+Sans&family=Roboto+Condensed&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gang-of-three");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: #000000;
+}
+
+.wrapper {
+  width: 529px;
+  margin: 0px 5px;
+}
+
+.wrapper .search-input {
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+  height: 42px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 62px;
+  color: #fff;
+  padding: 0 60px 0 24px;
+  font-size: 17px;
+  background-color: #0000006e;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
+}
+
+.search-input.active input {
+  border-radius: 69px 69px 69px 69px;
+}
+
+.search-input .autocom-box {
+  position: fixed;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+  background-color: #e6dfdfbd;
+}
+
+.search-input.active .autocom-box {
+  padding: 10px 105px;
+  opacity: 1;
+  pointer-events: auto;
+  background: #ffffff85;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+  display: block;
+}
+.autocom-box li:hover {
+  background: #efefef;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.719);
+  opacity: 1;
+}
+
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 44px;
+  width: 51px;
+  background-color: rgba(128, 128, 128, 0);
+  border-radius: 70px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 19px;
+  font-weight: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+h1 {
+  cursor: pointer;
+  color: #8b0000;
+  /* text-shadow: 0 0px 15px rgba(219, 61, 69, 0.212); */
+  font-size: 45px;
+  font-family: "Gang of Three", sans-serif;
+  letter-spacing: 2.3px;
+  margin-right: auto;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #810707c2;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(255, 255, 255, 0.137);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgb(0 0 0 / 15%);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active {
+  right: 300px;
+}
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+.text {
+  position: relative;
+  z-index: 10;
+}
+.text h2 {
+  font-size: 4em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3 {
+  font-size: 5em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+/* .text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 12px;
+  color: #111;
+  letter-spacing: 2.5px;
+  transition: 0.2s;
+}
+.text a:hover {
+  letter-spacing: 6px;
+} */
+
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn28 {
+  background-image: linear-gradient(
+    to right,
+    #000000db,
+    #2c2c2cad,
+    #3a3a3a75,
+    #2e2d2dc7
+  );
+  box-shadow: 0 0px 15px rgb(6 6 6 / 36%);
+}
+
+.vcontainer {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.i {
+  height: 10px;
+}
+
+.social {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a:hover {
+  color: #dc03f4;
+}
+
+@media screen and (max-width: 600px) {
+  /* h2 {
+    font-size: 35px;
+    line-height: 50px;
+    justify-content: center; */
+
+  /* .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 3em;
+  } */
+}
